@@ -1,19 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace CalculadoraAritmeticaE2.Servicios
 {
-    /// <summary>
-    /// Implementacion al MenuInterfaz
-    /// 09102023 - ebp
-    /// </summary>
-    internal class MenuImplementacion : MenuInterfaz
-    {
-        public int  MenuCalculadora()
+    
+    
+        /// <summary>
+        /// Implementacion al MenuInterfaz
+        /// 09102023 - ebp
+        /// </summary>
+        
+        internal class MenuImplementacion : MenuInterfaz {
+
+
+        public int MenuCalculadora()
         {
             int seleccionMenu;
 
@@ -35,7 +38,7 @@ namespace CalculadoraAritmeticaE2.Servicios
 
         public void SumaMenuCalculadora()
         {
-            Console.Clear();    
+            Console.Clear();
 
             int sumauno;
             int sumados;
@@ -55,7 +58,7 @@ namespace CalculadoraAritmeticaE2.Servicios
 
         }
 
-         public void RestaMenuCalculadora()
+        public void RestaMenuCalculadora()
         {
             Console.Clear();
 
@@ -80,7 +83,7 @@ namespace CalculadoraAritmeticaE2.Servicios
 
         public void MultiplicacionMenuCalculadora()
         {
-            Console.Clear() ;
+            Console.Clear();
 
             int multiplicando;
             int multiplicador;
@@ -99,7 +102,7 @@ namespace CalculadoraAritmeticaE2.Servicios
 
         public void DivisionMenuCalculadora()
         {
-            Console.Clear() ;
+            Console.Clear();
             float dividendo;
             float divisor;
 
@@ -111,13 +114,13 @@ namespace CalculadoraAritmeticaE2.Servicios
             Console.WriteLine("Introduzca el divisor: ");
             divisor = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("El resultado de " + dividendo + " / " + divisor + " es " + (dividendo / divisor) + " con resto " + (dividendo%divisor));
+            Console.WriteLine("El resultado de " + dividendo + " / " + divisor + " es " + (dividendo / divisor) + " con resto " + (dividendo % divisor));
             Console.WriteLine("---------------------------------");
 
 
 
         }
 
-        
-    }
+    
+    } 
 }

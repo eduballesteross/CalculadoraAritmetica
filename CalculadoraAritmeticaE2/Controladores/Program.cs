@@ -16,36 +16,41 @@ namespace CalculadoraAritmeticaE2.Controladores
         /// <param name="args"></param>
         public static void Main(string[] args)
         {
-            MenuInterfaz menuI = new MenuImplementacion();
+            MenuInterfaz menuI =  new MenuImplementacion();
 
 
             bool cerrarMenu = false;
             int seleccionMenuP;
 
-            while(!cerrarMenu)
+            while (!cerrarMenu)
             {
-                
-                seleccionMenuP = menuI .MenuCalculadora();
+
+                seleccionMenuP = menuI.MenuCalculadora();
                 Console.WriteLine(seleccionMenuP);
 
                 switch (seleccionMenuP)
                 {
-                    case 0: Console.WriteLine("[INFO] Se cerrará la aplicación");
+                    case 0:
+                        Console.WriteLine("[INFO] Se cerrará la aplicación");
                         cerrarMenu = true; break;
 
-                    case 1: Console.WriteLine("Has seleccionado la opcion de Sumar");
+                    case 1:
+                        Console.WriteLine("Has seleccionado la opcion de Sumar");
                         menuI.SumaMenuCalculadora();
                         break;
 
-                    case 2: Console.WriteLine("Has seleccionado la opcion de Restar");
+                    case 2:
+                        Console.WriteLine("Has seleccionado la opcion de Restar");
                         menuI.RestaMenuCalculadora();
                         break;
 
-                    case 3: Console.WriteLine("Has seleccionado la opcion de Multiplicar");
+                    case 3:
+                        Console.WriteLine("Has seleccionado la opcion de Multiplicar");
                         menuI.MultiplicacionMenuCalculadora();
                         break;
 
-                    case 4: Console.WriteLine("Has seleccionado la opcion de Dividir");
+                    case 4:
+                        Console.WriteLine("Has seleccionado la opcion de Dividir");
                         menuI.DivisionMenuCalculadora();
                         break;
                 }
